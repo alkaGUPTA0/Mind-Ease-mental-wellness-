@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #ffe0e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: white;
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo-text span {
+    color: #ff4081;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4081;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-top: 30px;
+}
+
+/* Chat Header */
+.chat-header {
+    background: #ff4081;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Chat Messages Box */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message Styling */
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    position: relative;
+}
+
+/* Received Message */
+.received {
+    background: #f5f5f5;
+    align-self: flex-start;
+}
+
+/* Sent Message */
+.sent {
+    background: #ff4081;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Timestamp */
+.timestamp {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #f9f9f9;
+}
+
+.chat-input button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Chat | MindEase</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="mindEase_logo.webp" alt="MindEase Logo">
+                <div class="logo-text">Mind<span>Ease</span></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="a.html">Resources</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="group_icon.png" alt="Group Icon">
+            <h2>Mental Wellness Group</h2>
+        </div>
+        
+        <div class="chat-box" id="chat-box">
+            <div class="message received">
+                <p>Hello everyone! 👋</p>
+                <span class="timestamp">10:15 AM</span>
+            </div>
+            <div class="message sent">
+                <p>Hey! How's your day going? 😊</p>
+                <span class="timestamp">10:16 AM</span>
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-btn">📩</button>
+        </div>
+    </div>
+
+    <script src="community.js"></script>
+</body>
+</html>

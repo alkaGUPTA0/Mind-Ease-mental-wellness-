@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: rgb(246, 245, 245);
+            color: palevioletred;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(69, 81, 213);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: larger;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #d9534f;
+        }
+        section {
+            padding: 30px;
+            background: white;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1000px;
+            box-sizing: border-box;
+            min-height: 300px; /* Increased section height */
+        }
+        h2 {
+            color: palevioletred;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #007bff; /* Blue color for contrast */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+        .image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .review-card {
+            background: #e6f7ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        .rating {
+            color: gold;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 30px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .close-btn {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            background-color: palevioletred;
+            padding: 5px 12px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        .close-btn a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .close-btn:hover {
+            background-color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="close-btn">
+    <a href="index.html">&times;</a>
+</div>
+
+<header>
+    <h1>Mental Health Support</h1>
+    <nav>
+        <ul>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#reviews">Expert Reviews</a></li>
+            <li><a href="#motivation">Motivation</a></li>
+            <li><a href="#symptoms">Symptoms</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="resources">
+    <h2>Helpful Resources</h2>
+    <p>Find support from these trusted mental health organizations:</p>
+    <ul>
+        <li><a href="https://www.who.int/health-topics/mental-health#tab=tab_1">World Health Organization on Mental Illness</a></li>
+        <li><a href="https://www.nami.org/">National Alliance on Mental Illness</a></li>
+        <li><a href="https://www.felicity.care">Find a Therapist</a></li>
+    </ul>
+</section>
+
+<section id="why-us">
+    <h2>Why Choose Our Hospital?</h2>
+    <p>Our hospital is committed to providing compassionate and expert mental health care.</p>
+    <ul>
+        <li>Experienced psychiatrists and therapists</li>
+        <li>Comprehensive treatment programs</li>
+        <li>24/7 emergency mental health support</li>
+    </ul>
+</section>
+
+<section id="reviews">
+    <h2>Expert Reviews</h2>
+    <div class="review-card">
+        <p><strong>Dr. James:</strong> "Highly professional and patient-centered care." <span class="rating">★★★★★</span></p>
+    </div>
+    <div class="review-card">
+        <p><strong>Health Weekly:</strong> "A leading hospital in mental health services." <span class="rating">★★★★★</span></p>
+    </div>
+</section>
+
+<section id="motivation">
+    <h2>Motivational Support</h2>
+    <img src="image3.png" alt="Motivational Support" class="image">
+    <p>Listen to inspiring podcasts and videos:</p>
+    <a href="https://tprf.org/new-lifes-essentials-with-prem-rawat-podcast-series">Mental Health Podcasts</a><br>
+    <a href="https://oc87recoverydiaries.org/depression-videos">Motivational Videos</a>
+</section>
+
+<section id="symptoms">
+    <h2>Recognizing Symptoms</h2>
+    <ul>
+        <li>Persistent sadness or hopelessness</li>
+        <li>Extreme anxiety or panic attacks</li>
+        <li>Changes in appetite or sleep</li>
+        <li>Withdrawal from social activities</li>
+        <li>Thoughts of self-harm or suicide</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Who to Contact</h2>
+    <p>If you or someone you know is struggling, reach out for help:</p>
+    <ul>
+        <li><strong>National Suicide Prevention Lifeline:</strong> 988</li>
+        <li><strong>Emergency Services:</strong> 911</li>
+        <li><strong>Online Counseling:</strong> <a href="https://www.betterhelp.com/">BetterHelp</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mental Health Support. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

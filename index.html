@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Landing Page</title>
+     <link rel="stylesheet" href="style1.css">
+     <link rel="stylesheet" href="register.css">
+     <link rel="stylesheet" href="mental_health.css">
+     <script src="script.js" defer></script>
+     <script type="module" src="register.js" defer></script>
+     <!-- <script type="module" src="login.js" defer></script> -->
+    
+    
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="mindEase_logo.webp" alt="MindEase Logo">
+                <div class="logo-text">Mind<span>Ease</span></div>
+            </div>
+            <ul>
+                <li><a href="http://localhost:8501/">Chatbot</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="a.html">Resources</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li>
+                    <a href="#" class="login-btn">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Blur Background Overlay -->
+    <div class="blur-bg-overlay" id="blurBgOverlay" onclick="closeForm()"></div>
+
+    <!-- Form Popup -->
+    <div class="form-popup" id="formPopup">
+        <span class="close-btn material-symbols-rounded">X</span>
+        <!-- Login Form -->
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using personal information to stay connected with us</p>
+            </div>
+            <div class="form-content">
+                <!-- <span class="close-btn" onclick="closeForm()">&times;</span> -->
+                <h2>LOGIN</h2>
+                <!-- <form id="loginFormContent"> -->
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label >Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password"  required>
+                            <label>Password</label>
+                        </div>
+                        <a href="#" class="forget-pass">Forgot Password?</a>
+                        <button type="submit" >Log In</button>
+
+                    </form>
+                    <div class="bottom-link">
+                        Don't have an account? 
+                        <a href="#" id="signup-link">Sign up</a>
+                    </div>
+                
+                <!-- </form> -->
+            </div>
+        </div>
+
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community , please sign up using your personal information</p>
+            </div>
+            <div class="form-content">
+                <!-- <span class="close-btn" onclick="closeForm()">&times;</span> -->
+                <h2>SIGNUP</h2>
+                <!-- <form id="loginFormContent"> -->
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" id="email" required>
+                            <label >Enter your email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id ="password" required>
+                            <label>Create Password</label>
+                        </div>
+                        <div class="policy-text">
+                            <input type="checkbox" id="policy">
+                            <label for="policy">
+                                I agree the
+                                <a href="#"> Terms & Conditions</a>
+                            </label>
+                        </div>
+                        <button type="submit" id="submit">Sign Up</button>
+
+                    </form>
+                    <div class="bottom-link">
+                        Alredy have an account? 
+                        <a href="#" id="login-link">Login</a>
+                    </div>
+                
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+        
+
+
+
+
+    <section class="hero">
+        <div class="content">
+            <h1><span>Mental</span> Health</h1>
+            <p>
+                🌿 Prioritize Your Mental Well-being 💙
+
+🧠 Mental health is just as important as physical health, yet it often goes unnoticed. In today’s fast-paced world, stress, anxiety, and overthinking have become common struggles. Taking care of your mind is not a luxury but a necessity.  
+
+✨ At MINDEASE, we believe in creating a supportive space where you can find guidance, connect with like-minded individuals 🤝, and explore effective ways to manage stress and emotions. Whether it’s through meditation 🧘‍♂️, self-reflection ✍️, or expert resources 📖, we’re here to help you build resilience and lead a balanced, fulfilling life.  
+
+
+            </p>
+            <a href="a.html" class="btn">More Resources</a>
+        </div>
+        <div class="image">
+            <img src="home_page.png" alt="Mental Health Illustration" />
+        </div>
+        </section>
+
+        <section class="why-mental-health">
+            <div class="why-mental-health-box">
+                <h2>Why Mental Health Matters</h2>
+                <div class="why-mental-health-cards">
+                    <div class="card">
+                        <img src="stress.png" alt="Stress Management">
+                        <h3>Stress Management</h3>
+                        <!-- <p>Learning to manage stress improves overall well-being and enhances focus.</p> -->
+                    </div>
+                    <div class="card">
+                        <img src="support.png" alt="Emotional Support">
+                        <h3>Emotional Support</h3>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="balance.png" alt="Life Balance">
+                        <h3>Work-Life Balance</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+   
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about" id="about">
+                <h3>About Us</h3>
+                <p>Our platform is dedicated to supporting mental well-being. We provide guidance, resources, and motivation to help individuals overcome anxiety, stress, and depression.</p>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@mentalwellness.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Follow us on social media for daily motivation!</p>
+            </div>
+    
+            <div class="footer-resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Mental Health Tips</a></li>
+                    <li><a href="#">Yoga & Meditation</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Motivational Articles</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 Mental Wellness | Empowering Minds, Embracing Life ❤️</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
